@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Noto Sans Bengali', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #41541c;
+}
+header a{
+    font-size: 1.2rem;
+    color: #fff;
+    display: block;
+}
+#logo {
+    width: 100%;
+}
+.icon {
+    display: block;
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+ul {
+    display: flex;
+}
+ul li {
+    padding: 10px;
+}
+#main {
+    display: flex;
+}
+aside{
+    width: 20vw;
+    min-width: 250px;
+    background: rgb(246, 246, 205);
+    display: flex;
+    flex-direction: column;
+}
+aside a{
+    font-size: 1rem;
+    color: #41541c;
+    padding: 15px;
+    border-bottom: 1px solid #41541c;
+}
+.aside-link {
+    display: flex;
+    flex-direction: column;
+}
+.aside-img img{
+    width: 100%;
+    padding: 10px;
+}
+h2 {
+    padding: 10px 0;
+    font-size: 2.5rem;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 1;
+}
+.serviceBox {
+    max-width: 320px;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1;
+}
+.serviceBox h4{
+    font-size: 1.5rem;
+    padding: 10px 0;
+}
+.serviceBox img {
+    width: 100%;
+}
+.btn{
+    border: 2px solid gray;
+    display: inline-block;
+    padding: 10px;
+    color: gray;
+    transition: 0.3s;
+}
+.btn:hover {
+    background: gray;
+    color: #fff;
+}
+p {
+    padding: 10px 0;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #41541c;
+    height: 60px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+footer p{
+    text-align: center;
+}
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    .logo {
+        order: -1;
+    }
+    .services-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .serviceBox {
+        margin:0 0 20px;
+    }
+    article {
+        order: -1;
+    }
+    #main {
+        flex-direction: column;
+    }
+    aside{
+        width: 100%;
+        flex-direction: column;
+    }
+    h2{
+        text-align: center;
+    }
+}
